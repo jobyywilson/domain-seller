@@ -1,0 +1,6 @@
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+[context.dev]
+  primary = tech-meet.com
