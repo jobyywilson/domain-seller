@@ -28,7 +28,8 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets",
+              "favicon.png",
+              "src/assets/images/favicon.png",
               "src/_redirects"
             ],
             "styles": [

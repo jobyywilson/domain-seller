@@ -15,6 +15,7 @@ export class AppComponent {
   primaryDomainEstimated : number = 0
   primaryDomainBuyNowUrl : string =""
   domainList : any = []
+  price : number =0;
 
 
   constructor(private commonService:CommonService){
@@ -29,11 +30,13 @@ export class AppComponent {
         let domainName = domain['domainName']
         let estmatedValue =  domain['estmatedValue']
         let buyNowUrl =  domain['buyNowUrl']
+        let price =  domain['price']
         let currentDomainName = window.location.hostname
         console.log(currentDomainName)
         if(domainName == currentDomainName){
           this.primaryDomainName = domainName
           this.primaryDomainEstimated = estmatedValue
+          this.price = price
           this.primaryDomainBuyNowUrl = buyNowUrl
           console.log(domain)
         }else{
