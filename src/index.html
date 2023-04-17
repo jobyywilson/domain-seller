@@ -11,7 +11,20 @@
   <meta name="robots" content="">
   <meta name="author" content="EvenThemes">
   <link rel="icon" type="image/x-icon" href="assets/images/favicon.png" />
-
+  <script>
+    // Get the domain name from the URL
+    var domainName = window.location.hostname;
+    
+    // Check if the domain name is tec-meet.com
+    if (domainName === 'tech-meet.com') {
+      // If it is, add the script tag to the head of the document
+      var adsScript = document.createElement('script');
+      adsScript.async = true;
+      adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6704834194533499';
+      adsScript.crossOrigin = 'anonymous';
+      document.head.appendChild(adsScript);
+    }
+  </script>
   <!-- ============ GOOGLE FONT =============== -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,600i,700" rel="stylesheet">
   <!-- ============ CSS =============== -->
